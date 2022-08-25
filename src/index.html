@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Material Design CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+    />
+
+    <!-- Material Design CDN JS -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- Material Design Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Typography -->
+    <link rel="stylesheet" href="https://use.typekit.net/ess7xmw.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="icon" href="./images/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+    <link rel="manifest" href="app.webmanifest" />
+
+    <!-- User Style/JavaScript -->
+    <link rel="stylesheet" href="./css/style-lp.css" />
+    <script src="./js/index.js" defer></script>
+    <title>TANGO</title>
+  </head>
+
+  <body>
+    <div id="flex-wrapper">
+      <div class="flex-item">
+        <br />
+
+        <h1 class="heading">Welcome to TANGO!</h1>
+
+        <p>
+          Thanks a lot for your interest in our task for assessing individual
+          differences in gaze understanding! <br />
+          To cite our task in publications please use:
+        </p>
+        <p>
+          Prein, Bohn, Kalinke, & Haun (2022).
+          <br />
+          <em>
+            TANGO: A reliable, open-source, web-based task to assess individual
+            differences in gaze understanding in 3 to 5-year-old children and
+            adults [Unpublished material].
+          </em>
+          <br />
+          <a href="https://github.com/ccp-eva/tango-demo"
+            >https://github.com/ccp-eva/tango-demo</a
+          >
+        </p>
+
+        <br />
+        <hr style="width: 100%; text-align: left; margin-left: 0" />
+        <br />
+
+        <p>
+          <strong>
+            Please enter an alphanumeric participant ID. Pay attention to upper
+            and lower case letters!
+          </strong>
+        </p>
+
+        <label class="mdc-text-field mdc-text-field--filled">
+          <span class="mdc-text-field__ripple"></span>
+          <span class="mdc-floating-label" id="my-label-id"></span>
+          <input
+            class="mdc-text-field__input"
+            type="text"
+            aria-labelledby="my-label-id"
+            maxlength="10"
+          />
+          <span class="mdc-line-ripple"></span>
+        </label>
+
+        <div class="mdc-text-field-helper-line">
+          <div class="mdc-text-field-character-counter">0 / 10</div>
+        </div>
+
+        <br />
+
+        <p>
+          <strong> Choose a study version: </strong>
+        </p>
+
+        <div class="mdc-form-field">
+          <div class="mdc-radio">
+            <input
+              class="mdc-radio__native-control"
+              type="radio"
+              id="radio-box"
+              name="radios-v"
+              unchecked
+            />
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <br />
+          <label for="radio-box">5 Boxes</label>
+        </div>
+        <div class="mdc-form-field">
+          <div class="mdc-radio">
+            <input
+              class="mdc-radio__native-control"
+              type="radio"
+              id="radio-hedge"
+              name="radios-v"
+              unchecked
+            />
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <label for="radio-hedge">Hedge</label>
+        </div>
+
+        <br />
+        <br />
+
+        <p>
+          <strong> Choose a language: </strong>
+        </p>
+
+        <div class="mdc-form-field">
+          <div class="mdc-radio">
+            <input
+              class="mdc-radio__native-control"
+              type="radio"
+              id="radio-en"
+              name="radios-lang"
+              unchecked
+            />
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <br />
+          <label for="radio-en">English</label>
+        </div>
+        <div class="mdc-form-field">
+          <div class="mdc-radio">
+            <input
+              class="mdc-radio__native-control"
+              type="radio"
+              id="radio-de"
+              name="radios-lang"
+              unchecked
+            />
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <label for="radio-de">German</label>
+        </div>
+
+        <br />
+        <br />
+
+        <p>
+          <strong> Record Webcam Video: </strong>
+        </p>
+
+        <div class="mdc-form-field">
+          <div class="mdc-radio">
+            <input
+              class="mdc-radio__native-control"
+              type="radio"
+              id="radio-webcam-yes"
+              name="radios-webcam"
+              unchecked
+            />
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <br />
+          <label for="radio-webcam-yes">Yes</label>
+        </div>
+        <div class="mdc-form-field">
+          <div class="mdc-radio">
+            <input
+              class="mdc-radio__native-control"
+              type="radio"
+              id="radio-webcam-no"
+              name="radios-webcam"
+              unchecked
+            />
+            <div class="mdc-radio__background">
+              <div class="mdc-radio__outer-circle"></div>
+              <div class="mdc-radio__inner-circle"></div>
+            </div>
+          </div>
+          <label for="radio-webcam-no">No</label>
+        </div>
+
+        <br />
+        <br />
+
+        <p style="color: hsl(177, 100%, 21%)">
+          <strong>
+            <em>
+              Please note: after completion, study data will be automatically
+              downloaded as a .json file.
+            </em></strong
+          >
+        </p>
+
+        <br />
+
+        <div id="button-center-wrapper">
+          <button
+            type="button"
+            class="ccp-button confirm mdc-button mdc-button--raised"
+            id="button-center-item"
+            disabled
+          >
+            <div class="mdc-button__ripple"></div>
+            <span class="mdc-button__label"><strong>GO TO STUDY</strong></span>
+          </button>
+        </div>
+
+        <!-- end flex-item -->
+      </div>
+
+      <!-- end flex-wrapper -->
+    </div>
+  </body>
+</html>

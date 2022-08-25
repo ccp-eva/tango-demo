@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: TANGO
+message: 'If you use this app, please cite it as below.'
+type: software
+authors:
+  - given-names: Julia Christin
+    family-names: Prein
+    email: julia_prein@eva.mpg.de
+    affiliation: >-
+      Max Planck Institute for Evolutionary
+      Anthropology
+  - given-names: Steven
+    family-names: Kalinke
+    email: steven_kalinke@eva.mpg.de
+    affiliation: >-
+      Max Planck Institute for Evolutionary
+      Anthropology
+repository-code: 'https://github.com/ccp-eva/tango-demo'
+url: 'https://ccp-odc.eva.mpg.de/tango-demo/'
+license: MIT

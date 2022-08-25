@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Material Design CDN CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+    />
+
+    <!-- Material Design CDN JS -->
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- Material Design Icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- Typography -->
+    <link rel="stylesheet" href="https://use.typekit.net/ess7xmw.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="icon" href="./images/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/apple-touch-icon.png" />
+    <link rel="manifest" href="app.webmanifest" />
+
+    <!-- User Style/JavaScript -->
+    <link rel="stylesheet" href="./css/style-lp.css" />
+    <script src="./js/app.js" defer></script>
+    <script src="./js/goodbye.js" defer></script>
+    <title>TANGO</title>
+  </head>
+
+  <body>
+    <div id="flex-wrapper">
+      <div class="flex-item">
+        <h1 class="heading">Thank you for participating!</h1>
+
+        <div id="gif-wrapper">
+          <img
+            id="gif-item"
+            alt="Thank you picture"
+            src="images/mpi-surprise.gif"
+            style="border: 2px solid var(--ccp-minerva-green)"
+          />
+        </div>
+
+        <p>
+          Great - you're done! We hope you enjoyed our balloon finding task.
+        </p>
+
+        <p>
+          This project was implemented by Julia Prein, Manuel Bohn, Luke
+          Maurits, Steven Kalinke and Daniel Haun <br />
+          at the Max Planck Institute for Evolutionary Anthropology, Leipzig.
+        </p>
+
+        <!-- <p>
+        If you have any questions or concerns, please get in touch with us: <br>         
+          <a
+            href="#"
+            class="cryptedmail"
+            data-name="forschungsreise"
+            data-domain="eva.mpg"
+            data-tld="de"
+            onclick="window.location.href =
+              `mailto: ${this.dataset.name}@${this.dataset.domain}.${this.dataset.tld}`; return false;"
+        ></a>
+
+        <br>
+      </p> -->
+
+        <br />
+
+        <div id="footer">
+          <img
+            id="logo"
+            alt="The logo of Comparative Cultural Psychology"
+            src="images/ccp-forschungsreise-en-min.svg"
+          />
+        </div>
+
+        <a href="https://www.eva.mpg.de/imprint/" target="_blank">Imprint</a>
+
+        <!-- end flex-item -->
+      </div>
+
+      <!-- end flex-wrapper -->
+    </div>
+  </body>
+</html>
